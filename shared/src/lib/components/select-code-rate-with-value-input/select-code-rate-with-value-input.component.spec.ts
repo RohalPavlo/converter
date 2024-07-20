@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ConvertInputComponent } from './convert-input.component';
+import { SelectCodeRateWithValueInput } from './select-code-rate-with-value-input.component';
 
 describe('ConvertInputComponent', () => {
-  let component: ConvertInputComponent;
-  let fixture: ComponentFixture<ConvertInputComponent>;
+  let component: SelectCodeRateWithValueInput;
+  let fixture: ComponentFixture<SelectCodeRateWithValueInput>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ConvertInputComponent],
+      imports: [SelectCodeRateWithValueInput],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ConvertInputComponent);
+    fixture = TestBed.createComponent(SelectCodeRateWithValueInput);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,20 +1,17 @@
 :host {
   .header-wrapper {
+    padding: 24px;
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
     &__exchange-rate {
-
       align-items: center;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
+      gap: 4px;
     }
-  }
-
-  .pr-2 {
-    padding-right: 8px;
   }
 }
