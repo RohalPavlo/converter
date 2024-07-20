@@ -1,0 +1,11 @@
+:host {
+  .covert-input-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+
+    .select-field {
+      width: 100px;
+    }
+  }
+}

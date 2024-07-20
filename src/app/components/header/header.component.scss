@@ -1,0 +1,20 @@
+:host {
+  .header-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__exchange-rate {
+
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .pr-2 {
+    padding-right: 8px;
+  }
+}

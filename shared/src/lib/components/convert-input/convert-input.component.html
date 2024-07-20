@@ -1,0 +1,15 @@
+<div *ngIf="form" [formGroup]="form" class="covert-input-wrapper">
+  <mat-form-field class="select-field" appearance="outline">
+    <mat-label>Code</mat-label>
+    <mat-select formControlName="code">
+      <mat-option *ngFor="let code of exchangeRateCodes | keyvalue" [value]="code.value">
+        {{ code.value }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Value</mat-label>
+    <input formControlName="value" type="number" matInput>
+  </mat-form-field>
+</div>

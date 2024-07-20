@@ -1,0 +1,1 @@
+export const BASE_EXCHANGE_RATE_API = "https://v6.exchangerate-api.com/v6/07a2cd996c8ba15e470eb0ee/latest/"

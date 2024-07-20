@@ -1,0 +1,16 @@
+<div class="header-wrapper">
+  <span>Converter</span>
+  <div *ngIf="(exchangeRates$ | async) as exchangeRates" class="header-wrapper__exchange-rate">
+    <lib-exchange-rate
+      class="pr-2"
+      [from]="exchangeRates[exchangeRateCodes.USD]"
+      [to]="exchangeRates[exchangeRateCodes.UAH]"
+    >
+    </lib-exchange-rate>
+    <lib-exchange-rate
+      [from]="exchangeRates[exchangeRateCodes.EUR]"
+      [to]="exchangeRates[exchangeRateCodes.UAH]"
+    >
+    </lib-exchange-rate>
+  </div>
+</div>
