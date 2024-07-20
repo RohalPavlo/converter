@@ -19,7 +19,7 @@ export class ExchangeRatesService {
   }
 
   private observeCurrentExchangeRatesChanges(): void {
-    timer(0 ,5000)
+    timer(0 ,60000)
       .pipe(
         switchMap(() => forkJoin([
           this.exchangeRatesApiService.getExchangeRateByCode(ExchangeRateCodes.UAH),

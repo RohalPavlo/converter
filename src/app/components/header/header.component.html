@@ -1,16 +1,18 @@
 <div class="header-wrapper">
   <h2 class="title">Converter</h2>
-  <span>Exchange rates are updated every 5 seconds</span>
-  <div *ngIf="(exchangeRates$ | async) as exchangeRates" class="header-wrapper__exchange-rate">
-    <lib-exchange-rate
-      [from]="exchangeRates[exchangeRateCodes.USD]"
-      [to]="exchangeRates[exchangeRateCodes.UAH]"
-    >
-    </lib-exchange-rate>
-    <lib-exchange-rate
-      [from]="exchangeRates[exchangeRateCodes.EUR]"
-      [to]="exchangeRates[exchangeRateCodes.UAH]"
-    >
-    </lib-exchange-rate>
-  </div>
+  <ng-container *ngIf="(exchangeRates$ | async) as exchangeRates">
+    <span>Exchange rates are updated every 60 seconds</span>
+    <div class="header-wrapper__exchange-rate">
+      <lib-exchange-rate
+        [from]="exchangeRates[exchangeRateCodes.USD]"
+        [to]="exchangeRates[exchangeRateCodes.UAH]"
+      >
+      </lib-exchange-rate>
+      <lib-exchange-rate
+        [from]="exchangeRates[exchangeRateCodes.EUR]"
+        [to]="exchangeRates[exchangeRateCodes.UAH]"
+      >
+      </lib-exchange-rate>
+    </div>
+  </ng-container>
 </div>
